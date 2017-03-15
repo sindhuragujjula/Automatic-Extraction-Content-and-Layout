@@ -1,0 +1,105 @@
+<!doctype>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <script type="text/javascript" src="./js/jquery3.js"></script>
+    <script type="text/javascript" src="./js/pdf.js"></script>
+    <script src="./js/main.js"></script>
+  </head>
+  <body>
+		 <div id="json">
+      </div>
+    <div class="row main">
+      <div class="col-md-12 pdf-header">
+	<h2>PDF Format Extractor</h2>
+      </div>
+      <div class="col-md-12 ">
+        <div class="pdf-load">
+	  <button class="btn btn-primary" >Load pdf file</button>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="row" id="detailsContainer"><!--  not_visible -->
+       
+	<div class="col-md-12 row">
+	  <label class="col-md-4" style="background-color:lavenderblush;">Title: </label>
+	  <div class="col-md-8" id="titleText"></div>
+	</div>
+	<div class="col-md-12 row">
+	  <label class="col-md-4" style="background-color:lightcyan;">Title Font Size: </label>
+	  <div class="col-md-8" id="titleFont"></div>
+	</div>
+	<div class="col-md-12 row">
+	  <label class="col-md-4" style="background-color:lavenderblush;">Title Length: </label>
+	  <div class="col-md-8" id="titleLength"></div>
+	</div>
+        <div class="col-md-12 row">
+	  <label class="col-md-4" style="background-color:lightcyan;">Abstract: </label>
+	  <div class="col-md-8" id="abstract"></div>
+	</div>
+        <div class="col-md-12 row">
+	  <label class="col-md-4" style="background-color:lavenderblush;">Abstract length: </label>
+	  <div class="col-md-8" id="abstract-length"></div>
+	</div>
+		<div class="col-md-12 row">
+	  <label class="col-md-4" style="background-color:lightcyan;">Abstract length-Minimum Value: </label>
+	  <div class="col-md-8" id="minvalue"></div>
+	</div>
+	<div class="col-md-12 row">
+	  <label class="col-md-4" style="background-color:lavenderblush;">Abstract length-Maximum Value:</label>
+	  <div class="col-md-8" id="maxvalue"></div>
+	</div>
+	<div class="col-md-12 row">
+	  <label class="col-md-4" style="background-color:lightcyan;">Abstract length-Average Value:</label>
+	  <div class="col-md-8" id="avgvalue"></div>
+	</div>
+        <div class="col-md-12 row">
+	  <label class="col-md-4" style="background-color:lavenderblush;">Abstract length Warning: </label>
+	  <div class="col-md-8" id="abstract-length-warning"></div>
+	</div>
+		<div class="col-md-12 row">
+	  <label class="col-md-4" style="background-color:lightcyan;">Abstract length Hint:</label>
+	  <div class="col-md-8" id="hint"></div>
+	</div>
+        <div class="col-md-12 row">
+	  <label class="col-md-4" style="background-color:lavenderblush;">Keywords: </label>
+	  <div class="col-md-8" id="keywords"></div>
+	</div>
+        <div class="col-md-12 row">
+	  <label class="col-md-4" style="background-color:lightcyan;">Keywords length: </label>
+	  <div class="col-md-8" id="keywords-length"></div>
+	</div>
+		<div class="col-md-12 row">
+	  <label class="col-md-4" style="background-color:lavenderblush;">Keywords length-Minimum Value: </label>
+	  <div class="col-md-8" id="kminvalue"></div>
+	</div>
+	<div class="col-md-12 row">
+	  <label class="col-md-4" style="background-color:lightcyan;">Keywords length-Maximum Value:</label>
+	  <div class="col-md-8" id="kmaxvalue"></div>
+	</div>
+	<div class="col-md-12 row">
+	  <label class="col-md-4" style="background-color:lavenderblush;">Keywords length-Average Value:</label>
+	  <div class="col-md-8" id="kavgvalue"></div>
+	</div>
+	  <div class="col-md-12 row">
+	  <label class="col-md-4" style="background-color:lightcyan;">Keywords length Warning: </label>
+	  <div class="col-md-8" id="keyword-length-warning"></div>
+	</div>
+		<div class="col-md-12 row">
+	  <label class="col-md-4" style="background-color:lavenderblush;">Keywords length Hint:</label>
+	  <div class="col-md-8" id="keywordshint"></div>
+	</div>
+	
+	 <div class="col-md-12 row">
+	  <label class="col-md-4" style="background-color:lightcyan;">No. of pages: </label>
+	  <div class="col-md-8" id="noOfPages"></div>
+	</div>
+      </div>
+    </div>
+    <div class="row pdf-container">
+      <iframe id="pdf_iframe col-md-12 " class="pdf-iframe-viewer" src=""></iframe>
+    </div>
+  </body>
+</html>

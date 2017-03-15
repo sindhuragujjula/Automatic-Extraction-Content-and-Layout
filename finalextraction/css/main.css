@@ -1,0 +1,30 @@
+body {
+    margin: 10 auto;
+    width: 70%;
+}
+
+.not_visible {
+    visibility: hidden;
+}
+.main {
+    margin: 10 auto;
+    width: 100%;
+    text-align: center;
+}
+.pdf-header {
+
+}
+#detailsContainer > div {
+    background-color: #f6f6f6;
+    padding: 10px;
+}
+.pdf-container {
+    width: 100%;
+    margin: 0 auto;
+    height: 970px;
+}
+iframe {
+    width: 100%;
+    margin: 20px auto;
+    height: 970px;
+}
